@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+// Generic Styles ============
+html, body {
+font-family: 'Poppins', sans-serif;
+}
+
+.button,.button-small{
+width: max-content;
+color: white;
+background: #21B573;
+border: none;
+border-radius: 33px;
+transition: all .2s ease-in-out;
+&:hover{
+    text-decoration: none;
+    color: white;
+    transform: translateY(-5%);
+}
+}
+
+.button{
+    padding: 12px 36px;
+}
+.button-small{
+    padding: 8px 28px;
+}
+// End 
+
+
+
+// Navigation ================
+nav{
+    #navbar-main{
+        ul li a{
+            color: black;
+            font-size: 1em;
+            margin-right: 15px;
+        }
+    }
+}
+
+// Hero section ===============
+.hero, nav{
+    background-color: #F0FFF0;
+}
+.hero-texts{
+    p{
+        color: #6C6B6B;
+        line-height: 2.25em;
+    }
+    h1{
+        font-size: 3em;
+        line-height: 70px;
+        .green{
+            color: #21B573;
+        }
+    }
+    .orange{
+        color: #FD511A;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+}
+// End
+
+// Cards Section ===============
+.cards{
+    .card{
+        background-color: #F8FFFB;
+        height: 270px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 20px 60px rgba(141, 141, 141, 0.1);
+        transition: all .2s ease-in-out;
+        img{
+            height: 30%;
+        }
+        h1{
+            font-size: 1.5em;
+            color: #413960;
+        }
+        p{
+            color: #585859;
+        }
+    &:hover{
+        transform: scale(1.1);
+        background-color: white;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    }
+    }
+   
+}
+// End
+
+// Courses Section ===============
+.courses{
+    header{
+        h1{
+            text-align: center;
+            font-size: 3.4em;
+        }
+    }
+    
+    // Single Course
+    .course{
+        background: #FEFEFE;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 18px;
+        transition: all .2s ease-in-out;
+        img{
+            width: 100%;
+        }
+        h2{
+            color: #413960;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        p{
+            color: #585859;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .course-footer{
+            font-weight: 500;
+            font-size: 16px;
+            color: #585859;
+            img{
+                width: 25px;
+                height: 20px;
+                padding-right: 5px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        &:hover{
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+    }
+
+}
+// End
+
+// Testimonials ==================
+.testimonials{
+    header{
+        h1{
+            text-align: center;
+            font-size: 3.4em;
+        }
+    }
+    // Changing carousel icon color
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+       }
+       
+       .carousel-control-next-icon {
+         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+       }
+       
+    // Testimony
+    .carousel-item{
+        .testimony{
+            height: 400px;
+            img{
+                width: 120px;
+                height: 120px;
+            }
+            p{
+                font-style: italic;
+                
+            .occupation{
+                color: rgba(107, 107, 107, 0.767);
+                font-style: normal;
+                line-height: 2em;
+            }
+            }
+        }
+    }
+    
+}
+// Newsletter
+.newsletter{
+    background-color: #21B573;
+    h2.subscribe{
+        color: white;
+        text-align: center;
+    }
+    .form-control{
+        max-width: 300px;
+    }
+    .form-control::placeholder{
+        font-size: 14px;
+        color: #6c6b6ba4;
+    }
+}
+// Footer ==============
+
+footer{
+    background-color: #282531;
+    .container{
+        .row{
+            .col-md-3{
+                p{
+                    color: white;
+                    font-style: 24px;
+                    font-weight: 500;
+                }
+                ul li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    line-height: 30px;
+                    color: white;
+                    font-weight: 300;
+                }
+                }
+            }
+        }
+    .copyright{
+        color: #cdcdcd;
+        text-align: center;
+    }
+    
+    }
+
+}
